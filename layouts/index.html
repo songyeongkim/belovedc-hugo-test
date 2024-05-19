@@ -5,18 +5,24 @@
     <article class="hx-w-full">
       <div class="content">
         {{ .Content }}
-        <div>
+        <section>
           <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_1.png">
+        </section>
+        <section>
           {{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "1000") }}
+        </section>
+        <section>
           <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_2_0.png">
+        </section>
+        <section>
           <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_3.png">
-        </div>
+        </section>
         <section class="hx-grid custom-grid-cols hx-my-4">
           <div> 
             <p><</p> 
           </div>
           <div>
-            <p>추천 설교 영상</p>
+            <h2>추천 설교 영상</h2>
             <ul class="hx-flex">
               <li class="hx-w-1/2">
                 <div class="hx-mr-2">
@@ -41,6 +47,15 @@
             </ul>
           </div>
           <div> > </div>
+        </section>
+        <section>
+          <img class="hx-w-full hx-rounded-none hx-m-0" src="images/banner.png">
+        </section>
+        <section>
+          <div>
+            <h2>예배 및 모임 안내</h2>
+          </div>
+          <img class="hx-w-full hx-rounded-none hx-m-0" src="images/timetable.png">
         </section>
     </article>
   </div>
