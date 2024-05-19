@@ -1,5 +1,4 @@
 # Hugo configuration file
-baseURL: https://songyeongkim.github.io/belovedc-hugo-test/
 title: My Site
 
 # import hextra as module
