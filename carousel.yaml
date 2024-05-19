@@ -1,0 +1,5 @@
+images:
+  - image: images/main_2_0.png
+    content_html: "1"
+  - image: images/main_2_1.png
+    content_html: "2"

@@ -1,0 +1,47 @@
+{{ define "main" }}
+  <div class='hx-mx-auto hx-flex hx-max-w-[90rem]'>
+    <!--{{ partial "sidebar.html" (dict "context" . "disableSidebar" true "displayPlaceholder" true) }}
+    {{ partial "toc.html" . }}-->
+    <article class="hx-w-full">
+      <div class="content">
+        {{ .Content }}
+        <div>
+          <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_1.png">
+          {{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "1000") }}
+          <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_2_0.png">
+          <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_3.png">
+        </div>
+        <section class="hx-grid custom-grid-cols hx-my-4">
+          <div> 
+            <p><</p> 
+          </div>
+          <div>
+            <p>추천 설교 영상</p>
+            <ul class="hx-flex">
+              <li class="hx-w-1/2">
+                <div class="hx-mr-2">
+                  <img src="images/recom_sum_0.png" alt="" class="hx-m-0">
+                  <p>강력 추천!!!!!!! "너는 나의 친구라!" (24.3.2. 말씀과 중보 집회. 김옥경 목사님)</p>
+                  <ul>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-pink">#김옥경목사</li>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-yellow">#2024 김옥경목사 말씀중보집회</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="hx-w-1/2">
+                <div class="hx-ml-2">
+                  <img src="images/recom_sum_0.png" alt="" class="hx-m-0">
+                  <p>강력 추천!!!!!!! "너는 나의 친구라!" (24.3.2. 말씀과 중보 집회. 김옥경 목사님)</p>
+                  <ul>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-pink">#김옥경목사</li>
+                    <li class="hx-px-2 hx-inline-block hx-text-sm custom-tag-color-yellow">#2024 김옥경목사 말씀중보집회</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div> > </div>
+        </section>
+    </article>
+  </div>
+{{ end }}
