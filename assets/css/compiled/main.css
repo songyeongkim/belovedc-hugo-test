@@ -577,9 +577,6 @@ video {
 .hx-order-last {
   order: 9999 !important;
 }
-.hx-m-0 {
-  margin: 0px !important;
-}
 .hx-m-\[11px\] {
   margin: 11px !important;
 }
@@ -610,10 +607,6 @@ video {
 .hx-my-2 {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
-}
-.hx-my-4 {
-  margin-top: 1rem !important;
-  margin-bottom: 1rem !important;
 }
 .-hx-mb-0 {
   margin-bottom: -0px !important;
@@ -650,9 +643,6 @@ video {
 }
 .hx-mb-8 {
   margin-bottom: 2rem !important;
-}
-.hx-ml-2 {
-  margin-left: 0.5rem !important;
 }
 .hx-ml-4 {
   margin-left: 1rem !important;
@@ -765,12 +755,6 @@ video {
 .hx-min-h-\[calc\(100vh-var\(--navbar-height\)\)\] {
   min-height: calc(100vh - var(--navbar-height)) !important;
 }
-.hx-w-1\/2 {
-  width: 50% !important;
-}
-.hx-w-10 {
-  width: 2.5rem !important;
-}
 .hx-w-2 {
   width: 0.5rem !important;
 }
@@ -785,9 +769,6 @@ video {
 }
 .hx-w-64 {
   width: 16rem !important;
-}
-.hx-w-80 {
-  width: 20rem !important;
 }
 .hx-w-\[110\%\] {
   width: 110% !important;
@@ -960,9 +941,6 @@ video {
 .hx-rounded-md {
   border-radius: 0.375rem !important;
 }
-.hx-rounded-none {
-  border-radius: 0px !important;
-}
 .hx-rounded-sm {
   border-radius: 0.125rem !important;
 }
@@ -1070,9 +1048,6 @@ video {
 .hx-bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
 }
-.hx-bg-none {
-  background-image: none !important;
-}
 .hx-from-gray-900 {
   --tw-gradient-from: #111827 var(--tw-gradient-from-position) !important;
   --tw-gradient-to: rgb(17 24 39 / 0) var(--tw-gradient-to-position) !important;
@@ -1084,9 +1059,6 @@ video {
 .hx-bg-clip-text {
   -webkit-background-clip: text !important;
           background-clip: text !important;
-}
-.hx-fill-red-400 {
-  fill: #f87171 !important;
 }
 .hx-p-0 {
   padding: 0px !important;
@@ -1202,9 +1174,6 @@ video {
 }
 .hx-text-center {
   text-align: center !important;
-}
-.hx-align-middle {
-  vertical-align: middle !important;
 }
 .hx-align-text-bottom {
   vertical-align: text-bottom !important;
