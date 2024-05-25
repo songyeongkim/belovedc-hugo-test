@@ -18,6 +18,17 @@ li
     margin: 0;
 }
 
+.content img
+{
+    margin : 0;
+    border-radius:0;
+}
+
+.content h2
+{
+    border:none;
+}
+
 .custom-grid-cols
 {
     grid-template-columns: 10% 80% 10%;
@@ -47,8 +58,44 @@ li
     margin-bottom: 0.25rem;
 }
 
+.custom-arrow-background {
+    fill: white;
+    stroke-width: 1px;
+    stroke: #fed9d9;
+}
 
-.carousel {position: relative;}
+.custom-arrow {
+    fill: none;
+    stroke: #fed9d9;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+
+.custom-arrow-container:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    cursor:pointer;
+}
+
+.custom-arrow-container:hover .custom-arrow-background {
+    fill: #fed9d9;
+    stroke-width: 0px;
+
+}
+
+
+.custom-arrow-container:hover .custom-arrow {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 3px;
+}
+
+
+.carousel {
+    position: relative;
+}
 .carousel ul {overflow: auto; display: flex; flex-wrap: nowrap; scroll-snap-type: x mandatory; scroll-snap-points-y: repeat(100%); scroll-behavior: smooth; background: gray; -ms-overflow-style: none; scrollbar-width: none; margin: 0; padding: 0;}
 .carousel ul::-webkit-scrollbar {display: none; /* Hide scrollbar for Chrome, Safari and Opera */} 
 .carousel ul li {position: relative; min-width: 100%; list-style: none; background: url() center center / cover no-repeat; scroll-snap-align: start;}
