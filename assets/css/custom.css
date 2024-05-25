@@ -48,6 +48,7 @@ li
 .custom-round-small-button {
     background-color: #F1F1F1;
     color: #696969;
+    cursor: pointer;
 }
 
 .custom-round-small-button-selected {
