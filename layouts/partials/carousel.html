@@ -4,14 +4,31 @@
 <div id="carousel10" class="carousel" duration="{{ .duration }}" items="{{ .items }}">
     <ul>
         {{ range $index, $slide := .context.Site.Data.carousel.images }}
-          <li id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};"><img src="{{ $slide.image }}" alt="" /><div><div></div></div></li>
+        <li id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
+            <img src="{{ $slide.image }}" alt="" />
+        </li>
         {{ end }}
     </ul>
     <ol>
-      {{ range $index, $page := .context.Site.Data.carousel.images }}
+        {{ range $index, $page := .context.Site.Data.carousel.images }}
         <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
-      {{ end }}
+        {{ end }}
     </ol>
-    <div class="prev">&lsaquo;</div>
-    <div class="next">&rsaquo;</div>
+    <div class="hx-max-w-[90rem] hx-mx-auto hx-h-full hx-w-full hx-absolute hx-top-0 hx-left-1/2 hx--translate-x-2/4 hx-p-8">
+        <div class="hx-absolute hx-bottom-0 hx-mb-8">
+            <div class="prev hx-inline-block hx-align-middle">
+                <svg class="custom-arrow-container" id="arrow_left" width="32" height="32" data-name="arrow_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+                    <rect class="custom-arrow-background" width="46" height="46" />
+                    <polyline class="custom-arrow" points="28.51 35.48 16.03 23 28.51 10.52" />
+                </svg>
+            </div>
+            <p class="hx-inline-block hx-h-8 hx-align-middle hx-mx-2 pageNum hx-font-bold hx-select-none">1 / {{ .context.Site.Data.carousel.images | len }}</p>
+            <div class="next hx-inline-block hx-align-middle">
+                <svg class="custom-arrow-container" id="arrow_right" width="32" height="32" data-name="arrow_right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
+                    <rect class="custom-arrow-background" width="46" height="46" />
+                    <polyline class="custom-arrow" points="17.49 10.52 29.97 23 17.49 35.48" />
+                </svg>
+            </div>
+        </div>
+    </div>
 </div>
