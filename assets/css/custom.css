@@ -27,16 +27,12 @@ li
 .content h2
 {
     border:none;
+    margin:0;
 }
 
 .custom-grid-cols
 {
     grid-template-columns: 10% 80% 10%;
-}
-
-.hx-border-b
-{
-
 }
 
 .custom-tag-color-pink
@@ -47,6 +43,17 @@ li
 .custom-tag-color-yellow
 {
     background-color: #F1EBCA;
+}
+
+.custom-round-small-button {
+    background-color: #F1F1F1;
+    color: #696969;
+}
+
+.custom-round-small-button-selected {
+    background-color: #FFAAAA;
+    color: white;
+    cursor: pointer;
 }
 
 .custom-mt--1px
