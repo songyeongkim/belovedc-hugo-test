@@ -5,8 +5,11 @@
     <article class="hx-w-full">
       <div class="content">
         {{ .Content }}
-        <section>
+        <section class="hx-relative">
           <img class="hx-w-full hx-rounded-none hx-m-0" src="images/main_1.png">
+          <div class="hx-absolute hx-top-0 hx-w-full hx-text-center">
+            <h4 class="hx-inline-block hx-px-20 hx-py-2 hx-bg-white/85 hx-rounded-lg">본 교회는 한국 교회를 대표하는 한기총 소속입니다!</h4>
+          </div>
         </section>
         <section>
           {{ partial "carousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "1000") }}
