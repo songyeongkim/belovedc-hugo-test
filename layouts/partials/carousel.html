@@ -4,8 +4,26 @@
 <div id="carousel10" class="carousel" duration="{{ .duration }}" items="{{ .items }}">
     <ul>
         {{ range $index, $slide := .context.Site.Data.carousel.images }}
-        <li id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
+        <li class="" id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
             <img src="{{ $slide.image }}" alt="" />
+            <div class="custom-pl-8 custom-pt-64 hx-max-w-[90rem] hx-w-full hx-inline-block hx-text-left hx-left-1/2 hx--translate-x-2/4">
+                {{ if $slide.title }}
+                <h1 class="hx-py-2 custom-text-5xl">{{ $slide.title }}</h1>
+                {{ end }}
+                {{ if $slide.description }}
+                <p class="hx-py-2 custom-text-2xl">{{ $slide.description }}</p>
+                {{ end }}
+                {{ if $slide.button }}
+                <div class="hx-mt-16 hx-text-xl custom-round-whitepink-button hx-inline-block hx-px-6 hx-py-2 hx-font-bold">
+                    <p class="hx-inline-block">{{ $slide.button }}</p>
+                    <svg class="hx-inline-block custom-mb-1" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.3 40.6" width="15" height="15">
+                        <defs>
+                            <style>.b{fill:#FF7C7C;}</style>
+                        </defs><polygon class="b" points="0 0 20.3 20.3 0 40.6 0 0"/>
+                    </svg>
+                </div>
+                {{ end }}
+            </div>
         </li>
         {{ end }}
     </ul>
@@ -14,7 +32,7 @@
         <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
         {{ end }}
     </ol>
-    <div class="hx-max-w-[90rem] hx-mx-auto hx-h-full hx-w-full hx-absolute hx-top-0 hx-left-1/2 hx--translate-x-2/4 hx-p-8">
+    <div class="hx-max-w-[90rem] hx-mx-auto hx-w-full hx-absolute hx-bottom-0 hx-left-1/2 hx--translate-x-2/4 hx-p-8">
         <div class="hx-absolute hx-bottom-0 hx-mb-8">
             <div class="prev hx-inline-block hx-align-middle">
                 <svg class="custom-arrow-container" id="arrow_left" width="32" height="32" data-name="arrow_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
@@ -22,7 +40,7 @@
                     <polyline class="custom-arrow" points="28.51 35.48 16.03 23 28.51 10.52" />
                 </svg>
             </div>
-            <div class="coustom-w-70 hx-text-center hx-inline-block hx-h-8 hx-align-middle pageNum hx-font-bold hx-select-none">
+            <div class="custom-w-70 hx-text-center hx-inline-block hx-h-8 hx-align-middle pageNum hx-font-bold hx-select-none">
                 <p class="carousel-pageNum hx-inline-block hx-h-8 hx-align-middle hx-mx-2">1</p>
                 <p class="hx-inline-block hx-h-8 hx-align-middle">/</p>
                 <p class="hx-inline-block hx-h-8 hx-align-middle hx-mx-2">{{ .context.Site.Data.carousel.images | len }}</p>

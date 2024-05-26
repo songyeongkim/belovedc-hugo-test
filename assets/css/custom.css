@@ -62,14 +62,62 @@ li
     cursor: pointer;
 }
 
+.custom-round-whitepink-button
+{
+    background: white;
+    color:#FF7C7C;
+    border: 1px solid #FF7C7C;
+    border-radius: 9999px;
+}
+
+.custom-round-whitepink-button:hover
+{
+    cursor: pointer;
+}
+
+
+/*여기는 tailwind에서 적용 시도 다시 해보아야 하는 부분*/
+
 .custom-mt--1px
 {
     margin-top : -1px;
 }
 
-.coustom-w-70
+.custom-mb-1
+{
+    margin-bottom: 0.25rem;
+}
+
+.custom-w-70
 {
     width:70px;
+}
+
+.custom-pt-64
+{
+    padding-top:16rem;
+}
+
+.custom-text-5xl
+{
+    font-size: 3rem;
+}
+
+.custom-text-2xl
+{
+    font-size: 1.5rem;
+}
+
+.custom-pl-8
+{
+    padding-left: 2rem;
+}
+
+/**/
+
+.coustom-font-gray
+{
+    color:#6F6F6F;
 }
 
 .custom-arrow-background {
@@ -115,7 +163,7 @@ li
 .carousel ul li {position: relative; min-width: 100%; list-style: none; background: url() center center / cover no-repeat; scroll-snap-align: start; margin:0; }
 .carousel ul li > * {position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 .carousel ul li > img {object-fit: cover;}
-.carousel ul li > div {display: flex; justify-content: center; align-items: center; color: white; font-weight: bold; font-size: 20px;}
+.carousel ul li > div {display: flex; justify-content: center; align-items: center;}
 .carousel ol {position: absolute; bottom: 15px; display: flex; justify-content: center; left: 50%; transform: translateX(-50%); z-index: 9;}
 .carousel ol li {list-style: none; padding: 0 5px;}
 .carousel ol li a {display: block; height: 10px; width: 10px; border: 2px solid white; background: transparent; border-radius: 100%;}
