@@ -67,6 +67,11 @@ li
     margin-top : -1px;
 }
 
+.coustom-w-70
+{
+    width:70px;
+}
+
 .custom-arrow-background {
     fill: white;
     stroke-width: 1px;
@@ -82,7 +87,7 @@ li
 }
 
 .custom-arrow-container:hover {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* ±×¸²ÀÚ È¿°ú */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); /* ï¿½×¸ï¿½ï¿½ï¿½ È¿ï¿½ï¿½ */
     cursor:pointer;
 }
 

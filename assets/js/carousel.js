@@ -51,7 +51,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const nextSlide = function () {
-            console.log("nextArrow");
             if (!carousel.querySelector('ol li:last-child').classList.contains('selected')) {
                 carousel.querySelector('ol li.selected').nextElementSibling.querySelector('a').click();
             } else {
