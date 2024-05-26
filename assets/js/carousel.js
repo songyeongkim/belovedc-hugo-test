@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const slides = carousel.querySelectorAll('ul li');
         const nextarrow = carousel.querySelector('.next');
         const prevarrow = carousel.querySelector('.prev');
+        const pageNum = carousel.querySelector('.carousel-pageNum');
 
         // Initialize the carousel
         nextarrow.style.display = 'block';
@@ -34,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
             const nthchild = (Math.round((ele.scrollLeft / scrolllength) + 1));
             carousel.querySelector('ol li:nth-child(' + nthchild + ')').classList.add('selected');
             carousel.querySelector('ul li:nth-child(' + nthchild + ')').classList.add('selected');
+
+            //페이지 넘버링 교체
+            pageNum.textContent = nthchild.toString();
+
             if (carousel.parentElement.parentElement.querySelector('.dynamictitle')) {
                 const title = carousel.querySelector('ul li:nth-child(' + nthchild + ') img').getAttribute('title');
                 if (title) carousel.parentElement.parentElement.querySelector('.dynamictitle').innerHTML = title;
@@ -60,6 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 carousel.querySelector('ol li:last-child a').click();
             }
+        }
+
+        const pageNumChange = function(){
+
         }
 
         const setInteracted = function () {
