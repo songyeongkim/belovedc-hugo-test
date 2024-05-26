@@ -60,3 +60,5 @@ params:
       link: /
       width: 120
       height: 60
+  search:
+    enable: false //에러가 자꾸 생기니까 임시로 false 설정
