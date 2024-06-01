@@ -4,6 +4,7 @@
 {{- $logoHeight := .Site.Params.navbar.logo.height | default "20" -}}
 {{- $logoDarkPath := .Site.Params.navbar.logo.dark | default $logoPath -}}
 {{- $dropdownIcon := default "images/dropdown.svg" -}}
+{{- $searchIconPath := .Site.Params.navbar.search.path | default "images/searchicon.png" -}}
 
 {{- $navWidth := "hx-max-w-[90rem]" -}}
 {{- with .Site.Params.navbar.width -}}
@@ -51,7 +52,7 @@
                href="{{ $link }}"
                {{ if $external }} target="_blank" rel="noreferer" {{ end }}
                class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block hx-h-full align-middle hover:hx-bg-gray-800/5">
-                <a class="hx-p-4 hx-flex hx-h-full hx-items-center">
+                <a class="hx-p-4 hx-flex hx-h-full hx-items-center" href="{{ $link }}">
                     <p class="hx-text-sm hx-p-1 hx-text-center">{{ or (T .Identifier) .Name | safeHTML }}</p>
                     <svg fill="#FFAAAA" class="hx-inline-block fill-red-400" width="10" height="10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                          y="0px" viewBox="0 0 100 100" xml:space="preserve">
@@ -107,7 +108,7 @@
             </li>
             
             <li class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block">
-                <img width="30" class="hx-inline-block" src="images/searchicon.png">
+                <img width="30" class="hx-inline-block" src="{{ $searchIconPath | relURL }}">
             </li> 
             
             <li class="hx-align-middle hx-cursor-pointer hx-relative hx-inline-block hx-h-full">

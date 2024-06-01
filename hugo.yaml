@@ -19,7 +19,7 @@ markup:
 menu:
   main:
     - name: 교회안내
-      pageRef: /docs
+      pageRef: /about
       weight: 1
     - name: 사사모안내
       pageRef: /blog
@@ -37,7 +37,7 @@ menu:
       pageRef: /about
       weight: 6
     - name: 인터넷방송국
-      pageRef: /about
+      pageRef: /broadcast/home
       weight: 7
     - name : 테스트1
       pageRef: 인터넷방송국/about
@@ -60,5 +60,7 @@ params:
       link: /
       width: 120
       height: 60
+    search:
+      path: images/searchicon.png
   search:
     enable: false //에러가 자꾸 생기니까 임시로 false 설정
