@@ -1,10 +1,10 @@
 images:
-  - image: images/main_2_0.png
+  - image: images/index/main_2_0.png
     content_html: "1"
     title: 변승우 담임 목사
     description: 세상을 놀라게 할 강력한 설교 영상들!
     button: 설교 보러가기
-  - image: images/main_2_1.png
+  - image: images/index/main_2_1.png
     content_html: "2"
     title: 김옥경 부담임 목사
     description: 사랑하는 사람들 모임 설교 영상

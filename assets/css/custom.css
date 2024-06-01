@@ -50,6 +50,11 @@ li
     background-color: #F1EBCA;
 }
 
+.custom-arrow-right
+{
+    fill:#ffb9b7;
+}
+
 .custom-round-small-button {
     background-color: #F1F1F1;
     color: #696969;
@@ -67,6 +72,13 @@ li
     background: white;
     color:#FF7C7C;
     border: 1px solid #FF7C7C;
+    border-radius: 9999px;
+}
+
+.custom-pink-button
+{
+    background-color: #FFA8A8;
+    color:white;
     border-radius: 9999px;
 }
 
@@ -115,10 +127,11 @@ li
 
 /**/
 
-.coustom-font-gray
+.custom-font-gray
 {
-    color:#6F6F6F;
+    color:#757575;
 }
+
 
 .custom-arrow-background {
     fill: white;
