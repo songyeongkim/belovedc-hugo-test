@@ -40,6 +40,12 @@ li
     grid-template-columns: 10% 80% 10%;
 }
 
+.custom-grid-cols-5
+{
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+
 .custom-tag-color-pink
 {
     background-color: #FFE0E0;

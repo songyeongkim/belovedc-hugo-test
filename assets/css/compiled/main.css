@@ -883,6 +883,9 @@ video {
      -moz-appearance: none !important;
           appearance: none !important;
 }
+.hx-grid-cols-5 {
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+}
 .hx-flex-col {
   flex-direction: column !important;
 }

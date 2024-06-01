@@ -306,6 +306,7 @@
       "hx-gap-x-1.5",
       "hx-gap-y-2",
       "hx-grid",
+      "hx-grid-cols-5",
       "hx-group",
       "hx-group/code",
       "hx-group/copybtn",
