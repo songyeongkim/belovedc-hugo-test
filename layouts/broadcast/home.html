@@ -1,7 +1,7 @@
 {{ define "main" }}
     <div class='hx-mx-auto hx-max-w-[90rem]'>
         <section class="hx-block hx-w-full hx-text-center">
-            <div class="hx-mt-16 hx-mb-12">
+            <div class="hx-mt-20 hx-mb-16">
                 <h1 class="hx-text-4xl hx-font-bold hx-mb-2">인터넷 방송국 홈</h1>
                 <p class="custom-font-gray hx-mb-8">"진리를 알지니 진리가 너희를 자유케 할지라" [요 8:32]</p>
                 <div class="custom-pink-button hx-inline-block hx-py-2 hx-px-6">전체 설교 영상 보기</div>
@@ -9,28 +9,30 @@
         </section class="hx-block hx-w-full">
             <div class="hx-relative">
                 <img class="hx-w-full hx-rounded-none hx-m-0" src="{{ "images/broadcast/broadcast_banner.png" | relURL }}" alt="">
-                <div class="hx-absolute hx-top-0 hx-w-full">
-                    <div class="hx-ml-16">
-                        <h2 class="hx-text-2xl hx-font-semibold">매주 새롭게 풀어지는 놀라운 진리!</h2>
-                        <p class="custom-font-gray">사랑하는교회 담임 목사 변승우 목사님의 주일 설교 영상입니다.</p>
-                    </div>
-                    <div>
-                        <p class="hx-font-semibold">최신 설교 영상 보기</p>
-                    </div>
+                <div class="hx-absolute hx-top-1/2 hx--translate-y-2/4 hx-w-full hx-ml-16">
+                    <h2 class="hx-text-3xl hx-font-semibold">매주 새롭게 풀어지는 놀라운 진리!</h2>
+                    <p class="custom-font-gray">사랑하는교회 담임 목사 변승우 목사님의 주일 설교 영상입니다.</p>
+                </div>
+                <div class="hx-ml-16 hx-absolute hx-bottom-0 hx-w-full hx-mb-16">
+                    <p class="hx-font-semibold">최신 설교 영상 보기</p>
                 </div>
             </div>
             <div>
-                <div>
-                    <svg id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
-                        <defs>
-                            <style></style>
-                        </defs>
-                        <polygon class="custom-arrow-right" points="0 0 34.73 21.55 0 43.1 0 0"/>
-                    </svg>
-                    <p>최신 주일 설교</p>
+                <div class="hx-mt-8 hx-flex hx-justify-between">
+                    <div>
+                        <svg class="hx-inline-block" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
+                            <polygon class="custom-arrow-right" points="0 0 34.73 21.55 0 43.1 0 0"/>
+                        </svg>
+                        <p class="hx-inline-block hx-font-medium hx-text-lg">최신 주일 설교</p>
+                    </div>
+                    <div class="custom-gray-button hx-py-2 hx-px-6 hx-font-bold">더보기</div>
                 </div>
-                <ul>
-                    <li></li>
+                <ul class="hx-mt-4">
+                    <li>
+                        <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
+                        <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
+                        <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                    </li>
                 </ul>
             </div>
         <section>

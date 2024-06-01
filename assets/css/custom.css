@@ -80,6 +80,15 @@ li
     background-color: #FFA8A8;
     color:white;
     border-radius: 9999px;
+    cursor: pointer;
+}
+
+.custom-gray-button
+{
+    background-color: #F2F2F2;
+    color:#444444;
+    border-radius: 9999px;
+    cursor: pointer;
 }
 
 .custom-round-whitepink-button:hover

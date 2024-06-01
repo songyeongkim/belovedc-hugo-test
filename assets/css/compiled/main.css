@@ -556,6 +556,9 @@ video {
 .hx-top-0 {
   top: 0px !important;
 }
+.hx-top-1\/2 {
+  top: 50% !important;
+}
 .hx-top-16 {
   top: 4rem !important;
 }
@@ -615,6 +618,10 @@ video {
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
 }
+.hx-my-6 {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
 .-hx-mb-0 {
   margin-bottom: -0px !important;
 }
@@ -651,6 +658,9 @@ video {
 .hx-mb-8 {
   margin-bottom: 2rem !important;
 }
+.hx-ml-16 {
+  margin-left: 4rem !important;
+}
 .hx-ml-4 {
   margin-left: 1rem !important;
 }
@@ -674,6 +684,9 @@ video {
 }
 .hx-mt-2 {
   margin-top: 0.5rem !important;
+}
+.hx-mt-20 {
+  margin-top: 5rem !important;
 }
 .hx-mt-4 {
   margin-top: 1rem !important;
@@ -837,6 +850,10 @@ video {
 }
 .hx--translate-x-2\/4 {
   --tw-translate-x: -50% !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+.hx--translate-y-2\/4 {
+  --tw-translate-y: -50% !important;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
 .hx-cursor-default {
@@ -1166,6 +1183,9 @@ video {
 .hx-pb-px {
   padding-bottom: 1px !important;
 }
+.hx-pl-8 {
+  padding-left: 2rem !important;
+}
 .hx-pl-\[max\(env\(safe-area-inset-left\)\,1\.5rem\)\] {
   padding-left: max(env(safe-area-inset-left),1.5rem) !important;
 }
@@ -1214,8 +1234,14 @@ video {
 .hx-text-2xl {
   font-size: 1.5rem !important;
 }
+.hx-text-3xl {
+  font-size: 1.875rem !important;
+}
 .hx-text-4xl {
   font-size: 2.25rem !important;
+}
+.hx-text-5xl {
+  font-size: 3rem !important;
 }
 .hx-text-\[10px\] {
   font-size: 10px !important;
@@ -1305,6 +1331,10 @@ video {
 .hx-text-gray-900 {
   --tw-text-opacity: 1 !important;
   color: rgb(17 24 39 / var(--tw-text-opacity)) !important;
+}
+.hx-text-neutral-400 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(163 163 163 / var(--tw-text-opacity)) !important;
 }
 .hx-text-orange-800 {
   --tw-text-opacity: 1 !important;
