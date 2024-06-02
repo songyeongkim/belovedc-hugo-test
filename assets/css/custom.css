@@ -102,6 +102,22 @@ li
     cursor: pointer;
 }
 
+.custom-grayline
+{
+    border: 1px solid #EDEDED;
+}
+
+.custom-li-style
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.custom-li-style .custom-gray-tag
+{
+    background-color: #E6E6E6;
+    border-radius: 5px;
+}
 
 /*여기는 tailwind에서 적용 시도 다시 해보아야 하는 부분*/
 
