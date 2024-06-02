@@ -293,6 +293,7 @@
       "hx-flex",
       "hx-flex-col",
       "hx-flex-wrap",
+      "hx-float-right",
       "hx-font-bold",
       "hx-font-extrabold",
       "hx-font-medium",

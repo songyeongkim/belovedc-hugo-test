@@ -583,6 +583,9 @@ video {
 .hx-order-last {
   order: 9999 !important;
 }
+.hx-float-right {
+  float: right !important;
+}
 .hx-m-\[11px\] {
   margin: 11px !important;
 }
