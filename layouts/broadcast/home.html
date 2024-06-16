@@ -8,20 +8,24 @@
             </div>
         </section>
         <section class="hx-block hx-w-full">
-            <div class="hx-relative">
-                <img class="hx-w-full hx-rounded-none hx-m-0" src="{{ "images/broadcast/broadcast_banner.png" | relURL }}" alt="">
-                <div class="hx-absolute hx-top-1/2 hx--translate-y-2/4 hx-w-full hx-ml-16">
+            <div class="hx-relative max-md:hx-overflow-hidden max-md:hx-h-52">
+                <img class="hx-w-full hx-rounded-none hx-m-0 max-md:hx-object-cover max-md:hx-h-full" src="{{ "images/broadcast/broadcast_banner.png" | relURL }}" alt="">
+                <div class="hx-absolute hx-top-1/2 hx--translate-y-2/4 hx-w-full hx-ml-16 max-md:hx-relative max-md:hx-hidden">
                     <h2 class="hx-text-3xl hx-font-semibold">매주 새롭게 풀어지는 놀라운 진리!</h2>
                     <p class="custom-font-gray">사랑하는교회 담임 목사 변승우 목사님의 주일 설교 영상입니다.</p>
                 </div>
-                <div class="hx-ml-16 hx-absolute hx-bottom-0 hx-w-full hx-mb-16">
+                <div class="hx-ml-16 hx-absolute hx-bottom-0 hx-w-full hx-mb-16 max-md:hx-hidden">
                     <p class="hx-font-semibold">최신 설교 영상 보기</p>
                 </div>
             </div>
-            <div>
+            <div class="md:hx-hidden hx-ml-2 hx-mt-2">
+                <h2 class="hx-text-xl hx-font-semibold">매주 새롭게 풀어지는 놀라운 진리!</h2>
+                <p class="custom-font-gray">사랑하는교회 담임 목사 변승우 목사님의 주일 설교 영상입니다.</p>
+            </div>
+            <div class="max-md:hx-hidden">
                 <div class="hx-mt-8 hx-flex hx-justify-between">
                     <div>
-                        <svg class="hx-inline-block hx-align-middle" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
+                        <svg class="hx-inline-block hx-align-middle hx-mr-2 hx-mb-2" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
                             <polygon class="custom-arrow-right hx-align-middle" points="0 0 34.73 21.55 0 43.1 0 0"/>
                         </svg>
                         <p class="hx-inline-block hx-font-medium hx-text-lg">최신 주일 설교</p>
@@ -29,43 +33,52 @@
                     <div class="custom-gray-button hx-py-2 hx-px-6 hx-font-bold">더보기</div>
                 </div>
                 <ul class="hx-mt-4 custom-grid-cols-5 hx-grid">
-                    <li class="">
-                        <div class="hx-m-auto hx-inline-block">
+                    <li class="hx-text-center">
+                        <div class="hx-inline-block hx-text-left hx-mx-1">
                             <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
                             <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
                             <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
                         </div>
                     </li>
-                    <li class="">
-                        <div>
+                    <li class="hx-text-center">
+                        <div class="hx-inline-block hx-text-left hx-mx-1">
                             <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
                             <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
                             <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
                         </div>
                     </li>
-                    <li class="">
-                        <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
-                        <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
-                        <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                    <li class="hx-text-center">
+                        <div class="hx-inline-block hx-text-left hx-mx-1">
+                            <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
+                            <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
+                            <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                        </div>
                     </li>
-                    <li class="">
-                        <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
-                        <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
-                        <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                    <li class="hx-text-center">
+                        <div class="hx-inline-block hx-text-left hx-mx-1">
+                            <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
+                            <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
+                            <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                        </div>
                     </li>
-                    <li class="">
-                        <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
-                        <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
-                        <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                    <li class="hx-text-center">
+                        <div class="hx-inline-block hx-text-left hx-mx-1">
+                            <img src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="">
+                            <h3 class="hx-font-medium hx-text-md hx-mt-4">목표를 바르게! 그리고 높게!</h3>
+                            <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">2024. 04. 13</p>
+                        </div>
                     </li>
                 </ul>
-            </div>   
+            </div>  
+            <div class="md:hx-hidden">
+                
+            </div> 
         </section>
         <div class="custom-grayline hx-my-12"></div>
         <section class="hx-mb-8">
             <div class="hx-mt-8 hx-flex hx-justify-between">
                 <div>
-                    <svg class="hx-inline-block hx-align-middle" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
+                    <svg class="hx-inline-block hx-align-middle hx-mr-2 hx-mb-2" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
                         <polygon class="custom-arrow-right hx-align-middle" points="0 0 34.73 21.55 0 43.1 0 0"/>
                     </svg>
                     <p class="hx-inline-block hx-font-medium hx-text-lg">추천 시리즈 설교</p>
@@ -90,9 +103,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag x-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -104,9 +117,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -118,9 +131,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -132,9 +145,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -146,9 +159,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -157,10 +170,10 @@
             </div>
         </section>
         <div class="custom-grayline hx-my-12"></div>
-        <section class="hx-mb-8">
+        <section class="hx-mb-16">
             <div class="hx-mt-8 hx-flex hx-justify-between">
                 <div>
-                    <svg class="hx-inline-block hx-align-middle" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
+                    <svg class="hx-inline-block hx-align-middle hx-mr-2 hx-mb-2" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.73 43.1" width="16" height="20">
                         <polygon class="custom-arrow-right hx-align-middle" points="0 0 34.73 21.55 0 43.1 0 0"/>
                     </svg>
                     <p class="hx-inline-block hx-font-medium hx-text-lg">다문화 TV 방송 설교</p>
@@ -182,9 +195,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -196,9 +209,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag x-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -210,9 +223,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>
@@ -224,9 +237,9 @@
                                     <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
                                 </div>
                                 <div>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 넣는 것</p>
-                                    <p class="hx-inline-block custom-gray-tag hx-px-2 hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 넣는 것</p>
+                                    <p class="hx-inline-block custom-gray-tag hx-px-2">#태그 짱길게 넣고 싶을 때 이렇게 쓰는 것</p>
                                 </div>
                             </div>
                         </li>

@@ -3339,8 +3339,25 @@ body:is(html[class~="dark"] *) {
     display: none !important;
   }
 
+  .max-md\:hx-h-52 {
+    height: 13rem !important;
+  }
+
+  .max-md\:hx-h-full {
+    height: 100% !important;
+  }
+
   .max-md\:hx-min-h-\[340px\] {
     min-height: 340px !important;
+  }
+
+  .max-md\:hx-overflow-hidden {
+    overflow: hidden !important;
+  }
+
+  .max-md\:hx-object-cover {
+    -o-object-fit: cover !important;
+       object-fit: cover !important;
   }
 
   .max-md\:\[transform\:translate3d\(0\2c -100\%\2c 0\)\] {
