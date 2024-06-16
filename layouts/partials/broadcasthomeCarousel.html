@@ -3,15 +3,15 @@
 {{ .context.Scratch.Set "items" .items }}
 <div id="carousel10" class="carousel" duration="{{ .duration }}" items="{{ .items }}">
     <ul>
-        {{ range $index, $slide := .context.Site.Data.carousel.images }}
+        {{ range $index, $slide := .context.Site.Data.carousel.broadcastHome }}
         <li class="" id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
-            <img class="hx-absolute" src="{{ $slide.image }}" alt="" />
-            <div class="hx-absolute custom-pl-8 custom-pt-64 hx-max-w-[90rem] hx-w-full hx-inline-block hx-text-left hx-left-1/2 hx--translate-x-2/4">
+            <img src="{{ relURL $slide.image }}" alt="" />
+            <div class="hx-relative hx-block hx-mx-2">
                 {{ if $slide.title }}
-                <h1 class="hx-py-2 custom-text-5xl">{{ $slide.title }}</h1>
+                <h3 class="hx-font-medium hx-text-md hx-mt-4">{{ $slide.title }}</h1>
                 {{ end }}
                 {{ if $slide.description }}
-                <p class="hx-py-2 custom-text-2xl">{{ $slide.description }}</p>
+                <p class="hx-text-sm hx-mt-2 hx-text-neutral-400">{{ $slide.description }}</p>
                 {{ end }}
                 {{ if $slide.button }}
                 <div class="hx-mt-16 hx-text-xl custom-round-whitepink-button hx-inline-block hx-px-6 hx-py-2 hx-font-bold">
@@ -32,8 +32,8 @@
         <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
         {{ end }}
     </ol>
-    <div class="hx-max-w-[90rem] hx-mx-auto hx-w-full hx-absolute hx-bottom-0 hx-left-1/2 hx--translate-x-2/4 hx-p-8">
-        <div class="hx-absolute hx-bottom-0 hx-mb-8">
+    <div class="">
+        <div class="hx-mx-2">
             <div class="prev hx-inline-block hx-align-middle">
                 <svg class="custom-arrow-container" id="arrow_left" width="32" height="32" data-name="arrow_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
                     <rect class="custom-arrow-background" width="46" height="46" />

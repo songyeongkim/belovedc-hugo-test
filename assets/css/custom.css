@@ -202,10 +202,11 @@ li
 .carousel {
     position: relative;
 }
-.carousel ul {overflow: auto; display: flex; flex-wrap: nowrap; scroll-snap-type: x mandatory; scroll-snap-points-y: repeat(100%); scroll-behavior: smooth; background: gray; -ms-overflow-style: none; scrollbar-width: none; margin: 0; padding: 0;}
+.carousel ul {overflow: auto; display: flex; flex-wrap: nowrap; scroll-snap-type: x mandatory; scroll-snap-points-y: repeat(100%); scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; margin: 0; padding: 0;}
+.carousel ul img{background: gray;}
 .carousel ul::-webkit-scrollbar {display: none; /* Hide scrollbar for Chrome, Safari and Opera */} 
 .carousel ul li {position: relative; min-width: 100%; list-style: none; background: url() center center / cover no-repeat; scroll-snap-align: start; margin:0; }
-.carousel ul li > * {position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.carousel ul li > * {left: 0; top: 0; width: 100%; height: 100%; }
 .carousel ul li > img {object-fit: cover;}
 .carousel ul li > div {display: flex; justify-content: center; align-items: center;}
 .carousel ol {position: absolute; bottom: 15px; display: flex; justify-content: center; left: 50%; transform: translateX(-50%); z-index: 9;}
