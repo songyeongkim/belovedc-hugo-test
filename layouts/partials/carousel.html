@@ -5,8 +5,8 @@
     <ul>
         {{ range $index, $slide := .context.Site.Data.carousel.images }}
         <li class="" id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
-            <img class="hx-absolute" src="{{ $slide.image }}" alt="" />
-            <div class="hx-absolute custom-pl-8 custom-pt-64 hx-max-w-[90rem] hx-w-full hx-inline-block hx-text-left hx-left-1/2 hx--translate-x-2/4">
+            <img class="hx-absolute hx-h-full" src="{{ $slide.image }}" alt="" />
+            <div class="hx-absolute hx-h-full custom-pl-8 custom-pt-64 hx-max-w-[90rem] hx-w-full hx-inline-block hx-text-left hx-left-1/2 hx--translate-x-2/4">
                 {{ if $slide.title }}
                 <h1 class="hx-py-2 custom-text-5xl">{{ $slide.title }}</h1>
                 {{ end }}

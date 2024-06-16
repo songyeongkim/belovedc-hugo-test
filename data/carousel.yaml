@@ -11,11 +11,11 @@ images:
     button: 설교 영상 보러가기
 
 broadcastHome:
-  - image: images/index/thumnail.png
+  - image: images/broadcast/thumnail.png
     content_html: "1"
     title: 목표를 바르게! 그리고 높게!
     description: 2024.04.13
-  - image: images/index/thumnail.png
+  - image: images/broadcast/thumnail.png
     content_html: "2"
     title: 목표를 바르게! 그리고 높게!
     description: 2024.04.13

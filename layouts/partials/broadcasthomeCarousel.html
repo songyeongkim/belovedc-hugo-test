@@ -4,7 +4,7 @@
 <div id="carousel10" class="carousel" duration="{{ .duration }}" items="{{ .items }}">
     <ul>
         {{ range $index, $slide := .context.Site.Data.carousel.broadcastHome }}
-        <li class="" id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
+        <li class="" id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); {{ $.context.Scratch.Get "unit" }};">
             <img src="{{ relURL $slide.image }}" alt="" />
             <div class="hx-relative hx-block hx-mx-2">
                 {{ if $slide.title }}
@@ -32,8 +32,8 @@
         <li><a href="#c10_slide{{ add $index 1 }}"></a></li>
         {{ end }}
     </ol>
-    <div class="">
-        <div class="hx-mx-2">
+    <div class="hx-mt-6">
+        <div>
             <div class="prev hx-inline-block hx-align-middle">
                 <svg class="custom-arrow-container" id="arrow_left" width="32" height="32" data-name="arrow_left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46">
                     <rect class="custom-arrow-background" width="46" height="46" />
