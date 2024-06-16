@@ -1257,6 +1257,9 @@ video {
 .hx-text-center {
   text-align: center !important;
 }
+.hx-text-right {
+  text-align: right !important;
+}
 .hx-align-middle {
   vertical-align: middle !important;
 }
