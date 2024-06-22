@@ -1,14 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\css",
     "\\content",
     "\\content\\broadcast",
     "\\content\\broadcast\\sermon",
     "\\layouts",
-    "\\layouts\\broadcast",
     "\\layouts\\partials",
-    "\\layouts\\_default"
+    "\\layouts\\partials\\utils"
   ],
-  "SelectedNode": "\\hugo_stats.json",
+  "SelectedNode": "\\layouts\\partials\\sermonSidebar.html",
   "PreviewInSolutionExplorer": false
 }
