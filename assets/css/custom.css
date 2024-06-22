@@ -81,6 +81,10 @@ li
     border-radius: 9999px;
 }
 
+.custom-text-pink {
+    color: #FF7C7C;
+}
+
 .custom-pink-button
 {
     background-color: #FFA8A8;
@@ -89,12 +93,26 @@ li
     cursor: pointer;
 }
 
+.custom-border-gray
+{
+    border : solid 1px #d5d5d5;
+}
+
+.custom-border-gray-d5 {
+    border: solid 1px #d5d5d5;
+}
+
 .custom-gray-button
 {
     background-color: #F2F2F2;
     color:#444444;
     border-radius: 9999px;
     cursor: pointer;
+}
+
+.custom-gray-bg
+{
+    background-color: #f5f5f5;
 }
 
 .custom-round-whitepink-button:hover

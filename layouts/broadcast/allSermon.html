@@ -1,5 +1,259 @@
 {{ define "main" }}
-    <div class='hx-mx-auto hx-max-w-[90rem]'>
-        allSermon
+<section>
+    <div class="hx-text-2xl hx-font-extrabold hx-text-center hx-my-10">
+        <h2>전체 설교 영상 목록</h2>
     </div>
-{{- end -}}
+</section>
+<div class='hx-mx-auto hx-flex {{ partial "utils/page-width" . }}'>
+    {{ partial "sidebar.html" (dict "context" .) }}
+    <article class="hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+        <main class="hx-w-full">
+            <div>
+                <div class="hx-flex hx-justify-between">
+                    <p class="hx-inline-block">총 영상수 <span class="custom-text-pink hx-text-bold">3,080</span> 건</p>
+                    <div class="hx-inline-block">
+                        <div class="hx-inline-block hx-mr-4">정렬 방식</div>
+                        <div class="hx-inline-block custom-text-pink">시리즈 설교 모아보기</div>
+                    </div>
+                </div>
+                <div class="hx-flex hx-justify-between custom-gray-bg hx-px-6 hx-py-6 hx-mt-2">
+                    <ul class="hx-inline-block">
+                        <li class="hx-inline-block hx-bg-white custom-border-gray hx-px-2 hx-py-1 hx-rounded hx-mt-1">부흥회 설교 <span class="custom-text-pink hx-text-bold">X</span></li>
+                        <li class="hx-inline-block hx-bg-white custom-border-gray hx-px-2 hx-py-1 hx-rounded hx-mt-1">부흥회 설교 <span class="custom-text-pink hx-text-bold">X</span></li>
+                        <li class="hx-inline-block hx-bg-white custom-border-gray hx-px-2 hx-py-1 hx-rounded hx-mt-1">부흥회 설교 <span class="custom-text-pink hx-text-bold">X</span></li>
+                        <li class="hx-inline-block hx-bg-white custom-border-gray hx-px-2 hx-py-1 hx-rounded hx-mt-1">부흥회 설교 <span class="custom-text-pink hx-text-bold">X</span></li>
+                    </ul>
+                    <div class="hx-inline-block custom-round-whitepink-button hx-px-6 hx-py-2">
+                        <img class="hx-inline-block" src="{{ "images/refresh.png" | relURL }}" alt="" />
+                        <p class="hx-text-sm hx-inline-block">필터 초기화</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-border-gray-d5 hx-my-2 max-md:hx-hidden"></div>
+            <section class="hx-mt-10">
+                <div class="hx-mb-10">
+                    <ul class="hx-grid hx-grid-cols-4">
+                        <li class="hx-inline-block hx-mr-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-ml-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hx-mb-10">
+                    <ul class="hx-grid hx-grid-cols-4">
+                        <li class="hx-inline-block hx-mr-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-ml-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hx-mb-10">
+                    <ul class="hx-grid hx-grid-cols-4">
+                        <li class="hx-inline-block hx-mr-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-ml-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hx-mb-10">
+                    <ul class="hx-grid hx-grid-cols-4">
+                        <li class="hx-inline-block hx-mr-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-ml-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hx-mb-10">
+                    <ul class="hx-grid hx-grid-cols-4">
+                        <li class="hx-inline-block hx-mr-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-ml-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hx-mb-10">
+                    <ul class="hx-grid hx-grid-cols-4">
+                        <li class="hx-inline-block hx-mr-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-mx-2">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                        <li class="hx-inline-block hx-ml-4">
+                            <img class="hx-w-full" src="{{ "images/broadcast/thumnail.png" | relURL }}" alt="Alternate Text" />
+                            <p class="hx-font-bold hx-mt-4">목표를 바르게! 그리고 높게!</p>
+                            <div>
+                                <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
+                                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">2024.04.07</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </article>
+</div>
+{{ end }}

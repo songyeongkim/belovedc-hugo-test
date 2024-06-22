@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
-    "\\assets\\css",
-    "\\assets\\css\\compiled",
-    "\\assets\\js",
+    "\\content",
+    "\\content\\broadcast",
+    "\\content\\broadcast\\sermon",
+    "\\layouts",
+    "\\layouts\\broadcast",
+    "\\layouts\\partials",
     "\\layouts\\_default"
   ],
-  "SelectedNode": "\\content",
+  "SelectedNode": "\\hugo_stats.json",
   "PreviewInSolutionExplorer": false
 }

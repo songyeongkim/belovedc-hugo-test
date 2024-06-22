@@ -1,5 +1,5 @@
-{{ define "main" }}
-    <div class='hx-mx-auto hx-max-w-[90rem]'>
+﻿{{ define "main" }}
+    <div class='hx-mx-auto {{ partial "utils/page-width" . }}'>
         <section class="hx-block hx-w-full hx-text-center hx-mx-2">
             <div class="hx-mt-20 hx-mb-16">
                 <h1 class="hx-text-4xl hx-font-bold hx-mb-2">인터넷 방송국 홈</h1>
@@ -18,7 +18,7 @@
                     <a href=""><p class="hx-font-semibold">최신 설교 영상 보기</p></a>
                 </div>
             </div>
-            <div class="md:hx-hidden hx-mx-2 hx-mt-2">
+            <div class="hx-mx-2 hx-mt-2 md:hx-hidden">
                 <div class="hx-flex hx-justify-between">
                     <h2 class="hx-text-xl hx-font-semibold">매주 새롭게 풀어지는 놀라운 진리!</h2>
                 </div>
@@ -75,7 +75,7 @@
                     </li>
                 </ul>
             </div>  
-            <div class="md:hx-hidden hx-mt-12">
+            <div class="hx-mt-12 md:hx-hidden">
                 {{ partial "broadcasthomeCarousel.html" (dict "context" . "items" "1" "height" "50" "unit" "%" "duration" "7000") }}
             </div> 
         </section>
@@ -98,7 +98,7 @@
                 <div class="hx-my-1.5">
                     <img src="{{ "images/broadcast/book.png" | relURL }}" alt="">
                 </div>
-                <div class="hx-mb-8 md:hx-hidden hx-mx-2">
+                <div class="hx-mb-8 hx-mx-2 md:hx-hidden">
                     <h2 class="hx-text-xl hx-font-semibold hx-mt-5 hx-mb-2">성령님이 우리를 진리로 인도하는 세 가지 방법!</h2>
                     <p class="custom-font-gray">우리를 진리 가운데로 인도하시는 성령님! 우리를 거룩으로 인도하시는 성령님! 우리를 성공과 번영으로 인도하시는 성령님!</p>
                 </div>
@@ -108,7 +108,7 @@
                 <div>
                     <ul class="hx-grid hx-grid-rows-5 hx-h-full hx-ml-2 max-md:hx-mx-0">
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -122,7 +122,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -136,7 +136,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -150,7 +150,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -164,7 +164,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -199,7 +199,7 @@
                 <h2 class="hx-text-3xl hx-font-semibold">아프리카를 주 예수께, 열방을 주 예수께!</h2>
                 <p class="custom-font-gray">우리를 진리 가운데로 인도하시는 성령님! 우리를 거룩으로 인도하시는 성령님! 우리를 성공과 번영으로 인도하시는 성령님!</p>
             </div>
-            <div class="hx-mb-8 md:hx-hidden hx-mx-2">
+            <div class="hx-mb-8 hx-mx-2 md:hx-hidden">
                 <h2 class="hx-text-xl hx-font-semibold hx-mt-5 hx-mb-2">아프리카를 주 예수께, 열방을 주 예수께!</h2>
                 <p class="custom-font-gray">우리를 진리 가운데로 인도하시는 성령님! 우리를 거룩으로 인도하시는 성령님! 우리를 성공과 번영으로 인도하시는 성령님!</p>
             </div>
@@ -210,7 +210,7 @@
                 <div>
                     <ul class="hx-grid hx-grid-rows-4 hx-h-full hx-mr-2 max-md:hx-mx-0">
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -224,7 +224,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -238,7 +238,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
@@ -252,7 +252,7 @@
                             </div>
                         </li>
                         <li class="custom-li-style hx-px-4 hx-py-4 hx-mt-1 hx-mb-2 hx-relative">
-                            <div class="hx-absolute md:hx-top-1/2 md:hx--translate-y-2/4 hx-inline-block max-md:hx-relative">
+                            <div class="hx-absolute hx-inline-block md:hx-top-1/2 md:hx--translate-y-2/4 max-md:hx-relative">
                                 <p class="hx-font-semibold">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
                                 <div class="hx-mb-2">
                                     <p class="hx-inline-block hx-text-sm">변승우 목사님</p>
