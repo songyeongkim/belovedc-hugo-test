@@ -39,8 +39,8 @@ menu:
     - name: 인터넷방송국
       pageRef: /broadcast/home
       weight: 7
-    - name : 테스트1
-      pageRef: 인터넷방송국/about
+    - name : 전체 설교 보기
+      pageRef: /broadcast/sermon
       parent: 인터넷방송국
       weight: 1
     - name : 테스트2
