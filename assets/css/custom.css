@@ -137,11 +137,13 @@ li
     border-radius: 5px;
 }
 
-/*여기는 tailwind에서 적용 시도 다시 해보아야 하는 부분*/
+.custom-list-selected {
+    color: #F04377;
+}
 
-.custom-mt--1px
-{
-    margin-top : -1px;
+/*여기는 tailwind에서 적용 시도 다시 해보아야 하는 부분*/
+.custom-mt--1px {
+    margin-top: -1px;
 }
 
 .custom-mb-1
