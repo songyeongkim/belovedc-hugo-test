@@ -684,6 +684,9 @@ video {
 .hx-ml-4 {
   margin-left: 1rem !important;
 }
+.hx-ml-6 {
+  margin-left: 1.5rem !important;
+}
 .hx-mr-1 {
   margin-right: 0.25rem !important;
 }
@@ -785,6 +788,9 @@ video {
 }
 .hx-h-\[18px\] {
   height: 18px !important;
+}
+.hx-h-\[730px\] {
+  height: 730px !important;
 }
 .hx-h-fit {
   height: -moz-fit-content !important;
@@ -1252,6 +1258,9 @@ video {
 }
 .hx-pb-px {
   padding-bottom: 1px !important;
+}
+.hx-pl-6 {
+  padding-left: 1.5rem !important;
 }
 .hx-pl-8 {
   padding-left: 2rem !important;

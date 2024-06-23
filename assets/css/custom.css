@@ -234,6 +234,20 @@ li
     stroke-width: 3px;
 }
 
+.custom-series-blocks .custom-series-blocks-selected
+{
+    background-color: #FFE4E4;
+}
+
+.custom-series-blocks-selected .custom-gray-tag {
+    background-color: #FFF6F6;
+}
+
+.custom-series-blocks-selected img
+{
+    display: inline-block !important;
+}
+
 
 .carousel {
     position: relative;

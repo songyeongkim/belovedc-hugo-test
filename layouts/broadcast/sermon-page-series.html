@@ -1,4 +1,4 @@
-{{ define "main" }}
+﻿{{ define "main" }}
 {{ $url := .Page.Params.videoUrl }}
 {{ $date := .Page.Params.Date }}
 {{ $date = time.AsTime $date }}
@@ -8,8 +8,8 @@
         <p class="hx-text-sm hx-text-neutral-400">홈 > 인터넷방송국 홈 > 전체 영상 목록</p>
         <div class="custom-grayline-d5 hx-my-2"></div>
     </div>
-    <section class="hx-grid custom-grid-2-70">
-        <div>
+    <section class="hx-grid custom-grid-2-70 hx-h-[730px] hx-mb-10">
+        <div class="hx-relative">
             <div class="video-container">
                 <iframe src="{{ $url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
                 </iframe>
@@ -41,10 +41,97 @@
                     <img class="hx-inline-block hx-mr-2 hx-align-middle" src="{{ "images/download.png" | relURL }}" alt="Alternate Text" />
                     <p class="hx-inline-block hx-align-middle">MP3 다운로드</p>
                 </div>
+                <div class="custom-grayline-d5 hx-absolute hx-bottom-0 hx-w-full"></div>
             </div>
-            <div class="custom-grayline-d5 hx-my-2"></div>
+            
         </div>
-        
+        <div class="hx-ml-6 hx-overflow-auto hx-h-full">
+            <div class="hx-flex hx-justify-between hx-mb-4">
+                <p class="hx-inline-block hx-font-semibold">개신교의 아킬레스건이 된 칭의의 교리!</p>
+                <p class="hx-inline-block"> <span class="hx-font-bold">1</span> / 60</p>
+            </div>
+            <div class="custom-grayline hx-my-2 hx-mx-4 hx-mb-4"></div>
+            <ul class="custom-series-blocks hx-h-full hx-w-full">
+                <li class="custom-series-blocks-selected custom-gray-bg hx-py-4 hx-px-4 hx-rounded-lg hx-mb-2">
+                    <img class="hx-hidden hx-inline-block hx-align-middle" src="{{ "images/selectedblock.png" | relURL }}" alt="Alternate Text" />
+                    <p class="hx-font-semibold hx-inline-block hx-align-middle hx-text-sm">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
+                    <div class="hx-mb-2 hx-my-2">
+                        <p class="hx-inline-block hx-text-xs hx-font-semibold">변승우 목사님</p>
+                        <p class="hx-inline-block hx-text-xs hx-text-neutral-400">2024.04.07</p>
+                    </div>
+                    <div class="hx-text-xs hx-font-semibold">
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 짱길게 넣고 싶을 때...</p>
+                    </div>
+                </li>
+                <li class="custom-gray-bg hx-py-4 hx-px-4 hx-rounded-lg hx-mb-2">
+                    <img class="hx-hidden hx-inline-block hx-align-middle" src="{{ "images/selectedblock.png" | relURL }}" alt="Alternate Text" />
+                    <p class="hx-font-semibold hx-inline-block hx-align-middle hx-text-sm">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
+                    <div class="hx-mb-2 hx-my-2">
+                        <p class="hx-inline-block hx-text-xs hx-font-semibold">변승우 목사님</p>
+                        <p class="hx-inline-block hx-text-xs hx-text-neutral-400">2024.04.07</p>
+                    </div>
+                    <div class="hx-text-xs hx-font-semibold">
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 짱길게 넣고 싶을 때...</p>
+                    </div>
+                </li>
+                <li class="custom-gray-bg hx-py-4 hx-px-4 hx-rounded-lg hx-mb-2">
+                    <img class="hx-hidden hx-inline-block hx-align-middle" src="{{ "images/selectedblock.png" | relURL }}" alt="Alternate Text" />
+                    <p class="hx-font-semibold hx-inline-block hx-align-middle hx-text-sm">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
+                    <div class="hx-mb-2 hx-my-2">
+                        <p class="hx-inline-block hx-text-xs hx-font-semibold">변승우 목사님</p>
+                        <p class="hx-inline-block hx-text-xs hx-text-neutral-400">2024.04.07</p>
+                    </div>
+                    <div class="hx-text-xs hx-font-semibold">
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 짱길게 넣고 싶을 때...</p>
+                    </div>
+                </li>
+                <li class="custom-gray-bg hx-py-4 hx-px-4 hx-rounded-lg hx-mb-2">
+                    <img class="hx-hidden hx-inline-block hx-align-middle" src="{{ "images/selectedblock.png" | relURL }}" alt="Alternate Text" />
+                    <p class="hx-font-semibold hx-inline-block hx-align-middle hx-text-sm">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
+                    <div class="hx-mb-2 hx-my-2">
+                        <p class="hx-inline-block hx-text-xs hx-font-semibold">변승우 목사님</p>
+                        <p class="hx-inline-block hx-text-xs hx-text-neutral-400">2024.04.07</p>
+                    </div>
+                    <div class="hx-text-xs hx-font-semibold">
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 짱길게 넣고 싶을 때...</p>
+                    </div>
+                </li>
+                <li class="custom-gray-bg hx-py-4 hx-px-4 hx-rounded-lg hx-mb-2">
+                    <img class="hx-hidden hx-inline-block hx-align-middle" src="{{ "images/selectedblock.png" | relURL }}" alt="Alternate Text" />
+                    <p class="hx-font-semibold hx-inline-block hx-align-middle hx-text-sm">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
+                    <div class="hx-mb-2 hx-my-2">
+                        <p class="hx-inline-block hx-text-xs hx-font-semibold">변승우 목사님</p>
+                        <p class="hx-inline-block hx-text-xs hx-text-neutral-400">2024.04.07</p>
+                    </div>
+                    <div class="hx-text-xs hx-font-semibold">
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 짱길게 넣고 싶을 때...</p>
+                    </div>
+                </li>
+                <li class="custom-gray-bg hx-py-4 hx-px-4 hx-rounded-lg hx-mb-2">
+                    <img class="hx-hidden hx-inline-block hx-align-middle" src="{{ "images/selectedblock.png" | relURL }}" alt="Alternate Text" />
+                    <p class="hx-font-semibold hx-inline-block hx-align-middle hx-text-sm">성령님이 우리를 진리로 인도하는 세 가지 방법!</p>
+                    <div class="hx-mb-2 hx-my-2">
+                        <p class="hx-inline-block hx-text-xs hx-font-semibold">변승우 목사님</p>
+                        <p class="hx-inline-block hx-text-xs hx-text-neutral-400">2024.04.07</p>
+                    </div>
+                    <div class="hx-text-xs hx-font-semibold">
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 넣는 것</p>
+                        <p class="hx-inline-block custom-gray-tag hx-mr-1 hx-px-1 hx-py-1 max-md:hx-overflow-hidden max-md:hx-w-28 max-md:hx-h-6">#태그 짱길게 넣고 싶을 때...</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 </div>
 {{ end }}
