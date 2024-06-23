@@ -1,7 +1,7 @@
 ﻿---
 draft: false
 type: broadcast
-layout: sermonPage
+layout: sermon-page-default
 pageWidth: wide
 
 title: 나무가 아니라 먼저 숲을 보라!

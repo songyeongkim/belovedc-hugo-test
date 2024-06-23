@@ -35,6 +35,11 @@ li
     margin: 0;
 }
 
+.custom-grid-2-70 
+{
+    grid-template-columns: 70% 30%;
+}
+
 .custom-grid-cols
 {
     grid-template-columns: 10% 80% 10%;
