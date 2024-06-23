@@ -786,6 +786,10 @@ video {
 .hx-h-\[18px\] {
   height: 18px !important;
 }
+.hx-h-fit {
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
 .hx-h-full {
   height: 100% !important;
 }
@@ -1200,6 +1204,10 @@ video {
 .hx-px-6 {
   padding-left: 1.5rem !important;
   padding-right: 1.5rem !important;
+}
+.hx-px-8 {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 .hx-py-1 {
   padding-top: 0.25rem !important;
