@@ -828,6 +828,9 @@ video {
 .hx-w-\[180\%\] {
   width: 180% !important;
 }
+.hx-w-\[72rem\] {
+  width: 72rem !important;
+}
 .hx-w-full {
   width: 100% !important;
 }

@@ -1,0 +1,37 @@
+{{ define "main" }}
+{{ $url := .Page.Params.videoUrl }}
+{{ $date := .Page.Params.Date }}
+{{ $date = time.AsTime $date }}
+{{ $date = $date.Format "2006-01-2" }}
+<div class='hx-mx-auto {{ partial "utils/page-width" . }}'>
+    <div class="hx-w-full hx-my-10">
+        <p class="hx-text-sm hx-text-neutral-400">홈 > 인터넷방송국 홈 > 전체 영상 목록</p>
+        <div class="custom-border-gray-d5 hx-my-2"></div>
+    </div>
+    <section class="hx-mx-auto hx-w-[72rem]">
+        <div class="video-container">
+            <iframe src="{{ $url }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <div class="content">
+            {{ .Content }}
+        </div>
+
+        <div class="hx-mt-8">
+            <div>
+                <h2 class="hx-font-bold hx-text-2xl">{{ .Page.Params.Title }}</h2>
+            </div>
+            <div class="hx-mt-2">
+                <p class="hx-inline-block hx-mr-4 hx-text-sm hx-font-bold">{{ .Page.Params.Preacher }}</p>
+                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">{{ $date }}</p>
+                <p class="hx-inline-block hx-text-sm hx-text-neutral-400"> | 조회수: </p>
+                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">{{ .Page.Params.View }}</p>
+                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">| 재생시간: </p>
+                <p class="hx-inline-block hx-text-sm hx-text-neutral-400">{{ .Page.Params.VideoLength }}</p>
+            </div>
+        </div>
+
+
+    </section>
+</div>
+{{ end }}

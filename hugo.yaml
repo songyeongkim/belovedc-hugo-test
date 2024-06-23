@@ -43,14 +43,14 @@ menu:
       pageRef: /broadcast/sermon
       parent: 인터넷방송국
       weight: 1
-    - name : 테스트2
-      pageRef: 인터넷방송국/about
-      parent: 인터넷방송국
-      weight: 2
 
 params:
   page:
     width: wide
+    videoURL: ""
+    preacher: ""
+    view: 0
+    videoLength: 0
   navbar:
     displayTitle: false
     displayLogo: true
