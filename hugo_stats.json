@@ -602,6 +602,7 @@
       "max-md:hx-h-6",
       "max-md:hx-h-52",
       "max-md:hx-h-full",
+      "max-md:hx-h-[50px]",
       "max-md:hx-object-cover",
       "max-md:hx-relative",
       "max-md:hx-w-28",

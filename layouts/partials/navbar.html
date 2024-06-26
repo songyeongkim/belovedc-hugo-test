@@ -16,8 +16,8 @@
 {{- end -}}
 
 <div class="nav-container hx-sticky hx-top-0 hx-z-20 hx-w-full print:hx-hidden">
-    <nav class="hx-h-[102px] hx-bg-white custom-border-bottom-pink">
-        <div class="hx-block hx-text-xs hx-text-neutral-400 hx-mx-auto hx-items-center hx-text-right hx-h-[37px] {{ $navWidth }}">
+    <nav class="hx-h-[102px] hx-bg-white custom-border-bottom-pink max-md:hx-h-[50px]">
+        <div class="hx-block hx-text-xs hx-text-neutral-400 hx-mx-auto hx-items-center hx-text-right hx-h-[37px] {{ $navWidth }} max-md:hx-hidden">
             <ul class="hx-inline-block hx-mr-16">
                 <li class="hx-inline-block">
                     <p>부흥 총회</p>
@@ -52,8 +52,8 @@
                 </select>
             </div>
         </div>
-        <div class="custom-grayline hx-w-full"></div>
-        <div class="hx-block hx-flex hx-justify-end hx-mx-auto hx-items-center hx-h-[65px] {{ $navWidth }}">
+        <div class="custom-grayline hx-w-full max-md:hx-hidden"></div>
+        <div class="hx-block hx-flex hx-justify-end hx-mx-auto hx-items-center hx-h-[65px] {{ $navWidth }} max-md:hx-hidden">
             <a class="hx-flex hx-items-center hover:hx-opacity-75 ltr:hx-mr-auto rtl:hx-ml-auto" href="{{ $logoLink }}">
                 {{- if (.Site.Params.navbar.displayLogo | default true) }}
                 <img class="hx-block dark:hx-hidden" src="{{ $logoPath | relURL }}" alt="{{ .Site.Title }}" height="{{ $logoHeight }}" width="{{ $logoWidth }}" />
@@ -138,10 +138,23 @@
             </ul>
         </div>
 
-
         <!-- 모바일 메뉴 -->
-        <button type="button" aria-label="Menu" class="hamburger-menu -hx-mr-2 hx-rounded hx-p-2 active:hx-bg-gray-400/20 md:hx-hidden">
-            {{- partial "utils/icon.html" (dict "name" "hamburger-menu" "attributes" "height=24") -}}
-        </button>
+        <div class="hx-flex hx-justify-between hx-px-4 hx-h-full md:hx-hidden">
+            <div class="hx-inline-block hx-h-full">
+                <a class="hx-h-full hx-flex hx-items-center hover:hx-opacity-75 ltr:hx-mr-auto rtl:hx-ml-auto" href="{{ $logoLink }}">
+                    {{- if (.Site.Params.navbar.displayLogo | default true) }}
+                    <img class="hx-block dark:hx-hidden" src="{{ $logoPath | relURL }}" alt="{{ .Site.Title }}" height="{{ $logoHeight }}" width="{{ $logoWidth }}" />
+                    <img class="hx-hidden dark:hx-block" src="{{ $logoDarkPath | relURL }}" alt="{{ .Site.Title }}" height="{{ $logoHeight }}" width="{{ $logoWidth }}" />
+                    {{- end }}
+                    {{- if (.Site.Params.navbar.displayTitle | default true) }}
+                    <span class="hx-mx-2 hx-font-extrabold hx-inline hx-select-none" title="{{ .Site.Title }}">{{- .Site.Title -}}</span>
+                    {{- end }}
+                </a>
+            </div>
+            <button type="button" aria-label="Menu" class="hx-h-full hx-inline-block hx-h-full hamburger-menu -hx-mr-2 hx-rounded hx-p-2 active:hx-bg-gray-400/20 md:hx-hidden">
+                {{- partial "utils/icon.html" (dict "name" "hamburger-menu" "attributes" "height=24") -}}
+            </button>
+        </div>
+        
     </nav>
 </div>

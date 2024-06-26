@@ -96,7 +96,7 @@ li
 }
 
 .custom-border-bottom-pink {
-    border-bottom: 1px solid #FF7C7C80;
+    box-shadow: 0 2px 3px 2px #ff7c7c17;
 }
 
 .custom-pink-button
