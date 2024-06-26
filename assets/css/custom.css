@@ -91,6 +91,14 @@ li
     color: #FF7C7C;
 }
 
+.custom-text-pink-hover :hover {
+    color: #FF7C7C;
+}
+
+.custom-border-bottom-pink {
+    border-bottom: 1px solid #FF7C7C80;
+}
+
 .custom-pink-button
 {
     background-color: #FFA8A8;
@@ -155,41 +163,6 @@ li
 
 .custom-lightPink-background {
     background-color: #FFDFDF;
-}
-
-/*여기는 tailwind에서 적용 시도 다시 해보아야 하는 부분*/
-.custom-mt--1px {
-    margin-top: -1px;
-}
-
-.custom-mb-1
-{
-    margin-bottom: 0.25rem;
-}
-
-.custom-w-70
-{
-    width:70px;
-}
-
-.custom-pt-64
-{
-    padding-top:16rem;
-}
-
-.custom-text-5xl
-{
-    font-size: 3rem;
-}
-
-.custom-text-2xl
-{
-    font-size: 1.5rem;
-}
-
-.custom-pl-8
-{
-    padding-left: 2rem;
 }
 
 /**/

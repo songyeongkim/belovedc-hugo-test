@@ -6,17 +6,17 @@
         {{ range $index, $slide := .context.Site.Data.carousel.images }}
         <li class="" id="c10_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.context.Scratch.Get "items" }}); padding-bottom: {{ $.context.Scratch.Get "height" }}{{ $.context.Scratch.Get "unit" }};">
             <img class="hx-absolute hx-h-full" src="{{ $slide.image }}" alt="" />
-            <div class="hx-absolute hx-h-full custom-pl-8 custom-pt-64 hx-max-w-[90rem] hx-w-full hx-inline-block hx-text-left hx-left-1/2 hx--translate-x-2/4">
+            <div class="hx-absolute hx-h-full hx-pl-8 hx-pt-64 hx-max-w-[90rem] hx-w-full hx-inline-block hx-text-left hx-left-1/2 hx--translate-x-2/4">
                 {{ if $slide.title }}
-                <h1 class="hx-py-2 custom-text-5xl">{{ $slide.title }}</h1>
+                <h1 class="hx-py-2 hx-text-5xl">{{ $slide.title }}</h1>
                 {{ end }}
                 {{ if $slide.description }}
-                <p class="hx-py-2 custom-text-2xl">{{ $slide.description }}</p>
+                <p class="hx-py-2 hx-text-2xl">{{ $slide.description }}</p>
                 {{ end }}
                 {{ if $slide.button }}
                 <div class="hx-mt-16 hx-text-xl custom-round-whitepink-button hx-inline-block hx-px-6 hx-py-2 hx-font-bold">
                     <p class="hx-inline-block">{{ $slide.button }}</p>
-                    <svg class="hx-inline-block custom-mb-1" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.3 40.6" width="15" height="15">
+                    <svg class="hx-inline-block hx-mb-1" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.3 40.6" width="15" height="15">
                         <defs>
                             <style>.b{fill:#FF7C7C;}</style>
                         </defs><polygon class="b" points="0 0 20.3 20.3 0 40.6 0 0"/>

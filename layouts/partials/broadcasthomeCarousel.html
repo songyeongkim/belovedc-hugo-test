@@ -16,7 +16,7 @@
                 {{ if $slide.button }}
                 <div class="hx-mt-16 hx-text-xl custom-round-whitepink-button hx-inline-block hx-px-6 hx-py-2 hx-font-bold">
                     <p class="hx-inline-block">{{ $slide.button }}</p>
-                    <svg class="hx-inline-block custom-mb-1" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.3 40.6" width="15" height="15">
+                    <svg class="hx-inline-block hx-mb-1" id="a" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.3 40.6" width="15" height="15">
                         <defs>
                             <style>.b{fill:#FF7C7C;}</style>
                         </defs><polygon class="b" points="0 0 20.3 20.3 0 40.6 0 0"/>
@@ -40,7 +40,7 @@
                     <polyline class="custom-arrow" points="28.51 35.48 16.03 23 28.51 10.52" />
                 </svg>
             </div>
-            <div class="custom-w-70 hx-text-center hx-inline-block hx-h-8 hx-align-middle pageNum hx-font-bold hx-select-none">
+            <div class="hx-w-[70px] hx-text-center hx-inline-block hx-h-8 hx-align-middle pageNum hx-font-bold hx-select-none">
                 <p class="carousel-pageNum hx-inline-block hx-h-8 hx-align-middle hx-mx-2">1</p>
                 <p class="hx-inline-block hx-h-8 hx-align-middle">/</p>
                 <p class="hx-inline-block hx-h-8 hx-align-middle hx-mx-2">{{ .context.Site.Data.carousel.images | len }}</p>

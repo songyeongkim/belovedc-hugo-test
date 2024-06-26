@@ -601,6 +601,10 @@ video {
   margin-left: 1rem !important;
   margin-right: 1rem !important;
 }
+.hx-mx-6 {
+  margin-left: 1.5rem !important;
+  margin-right: 1.5rem !important;
+}
 .hx-mx-auto {
   margin-left: auto !important;
   margin-right: auto !important;
@@ -645,8 +649,14 @@ video {
 .-hx-mr-2 {
   margin-right: -0.5rem !important;
 }
+.-hx-mt-1 {
+  margin-top: -0.25rem !important;
+}
 .-hx-mt-20 {
   margin-top: -5rem !important;
+}
+.hx-mb-1 {
+  margin-bottom: 0.25rem !important;
 }
 .hx-mb-10 {
   margin-bottom: 2.5rem !important;
@@ -690,8 +700,14 @@ video {
 .hx-mr-1 {
   margin-right: 0.25rem !important;
 }
+.hx-mr-16 {
+  margin-right: 4rem !important;
+}
 .hx-mr-2 {
   margin-right: 0.5rem !important;
+}
+.hx-mr-20 {
+  margin-right: 5rem !important;
 }
 .hx-mr-4 {
   margin-right: 1rem !important;
@@ -786,8 +802,17 @@ video {
 .hx-h-7 {
   height: 1.75rem !important;
 }
+.hx-h-\[102px\] {
+  height: 102px !important;
+}
 .hx-h-\[18px\] {
   height: 18px !important;
+}
+.hx-h-\[37px\] {
+  height: 37px !important;
+}
+.hx-h-\[65px\] {
+  height: 65px !important;
 }
 .hx-h-\[730px\] {
   height: 730px !important;
@@ -840,6 +865,9 @@ video {
 }
 .hx-w-\[70\%\] {
   width: 70% !important;
+}
+.hx-w-\[70px\] {
+  width: 70px !important;
 }
 .hx-w-\[72rem\] {
   width: 72rem !important;
@@ -1194,6 +1222,10 @@ video {
   padding-left: 0.375rem !important;
   padding-right: 0.375rem !important;
 }
+.hx-px-10 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
 .hx-px-2 {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important;
@@ -1288,6 +1320,9 @@ video {
 }
 .hx-pt-6 {
   padding-top: 1.5rem !important;
+}
+.hx-pt-64 {
+  padding-top: 16rem !important;
 }
 .hx-pt-8 {
   padding-top: 2rem !important;
@@ -1385,6 +1420,10 @@ video {
 .hx-text-\[color\:hsl\(var\(--primary-hue\)\,100\%\,50\%\)\] {
   --tw-text-opacity: 1 !important;
   color: hsl(var(--primary-hue) 100% 50% / var(--tw-text-opacity)) !important;
+}
+.hx-text-black {
+  --tw-text-opacity: 1 !important;
+  color: rgb(0 0 0 / var(--tw-text-opacity)) !important;
 }
 .hx-text-blue-900 {
   --tw-text-opacity: 1 !important;
