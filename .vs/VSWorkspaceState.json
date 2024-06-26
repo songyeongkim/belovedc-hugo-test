@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\css",
     "\\content",
     "\\content\\broadcast",
+    "\\content\\broadcast\\series",
+    "\\content\\broadcast\\series\\sermonpage",
     "\\content\\broadcast\\sermon",
+    "\\content\\broadcast\\sermon\\sermonpage",
     "\\layouts",
-    "\\layouts\\partials",
-    "\\layouts\\partials\\utils"
+    "\\layouts\\broadcast",
+    "\\layouts\\_default"
   ],
-  "SelectedNode": "\\layouts\\partials\\sermonSidebar.html",
+  "SelectedNode": "\\layouts\\broadcast\\home.html",
   "PreviewInSolutionExplorer": false
 }
